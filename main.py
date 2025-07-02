@@ -1,6 +1,6 @@
 import pygame, sys, time
 from settings import *
-from sprites import BG,Ground,Bird, Obstacles
+from sprites import BG,Ground, Bird, Obstacles
 
 class Game:
     def __init__(self):   # set up starting values (like position, score, health
@@ -10,7 +10,7 @@ class Game:
         self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
         pygame.display.set_caption('Flappy Bird')
         self.clock = pygame.time.Clock() # creates a clock object
-        self.font = pygame.font.SysFont(None, 30)  # Added for score display
+        self.font = pygame.font.SysFont('Bauhaus 93', 30)  # Added for score display
         self.gameover_bg = pygame.image.load("graphics/environment/gameover_bg.png").convert_alpha()
         self.game_over_bg = pygame.transform.scale(self.gameover_bg, (WINDOW_WIDTH, WINDOW_HEIGHT))
         # game state
@@ -32,9 +32,8 @@ class Game:
 
 
         #timer
-        self.obstacle_timer= pygame.USEREVENT +1  # own custom event/want to do something automatically
+        self.obstacle_timer= pygame.USEREVENT + 1  # own custom event/want to do something automatically
         pygame.time.set_timer(self.obstacle_timer ,900)
-
 
 
     def collisions(self):

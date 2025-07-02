@@ -84,7 +84,7 @@ class Bird(pygame.sprite.Sprite):
         self.rect.y = round(self.pos.y)
 
     def jump(self):
-        self.direction = -400
+        self.direction = -300
 
     def animate(self,dt):
         self.frame_index += 10*dt #to control speed of animation 10 frames per sec
@@ -133,7 +133,7 @@ class Obstacles(pygame.sprite.Sprite):
         Obstacles(groups, scale_factor, 'up', x_pos, y_pos_bottom)
 
         # Top pipe
-        y_pos_top = y_pos_bottom - WINDOW_HEIGHT- gap_height
+        y_pos_top = y_pos_bottom - WINDOW_HEIGHT - gap_height
         Obstacles(groups, scale_factor, 'down', x_pos, y_pos_top)
         # Invisible scoring trigger (placed between pipes)
         Obstacles(groups, scale_factor, None, x_pos + 50, (y_pos_bottom + y_pos_top) // 2, is_scorer=True)
