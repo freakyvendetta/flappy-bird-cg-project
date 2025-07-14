@@ -4,17 +4,17 @@
 [![Library: Pygame](https://img.shields.io/badge/Library-Pygame%202.x-green.svg)](https://www.pygame.org/)
 [![Subject: Computer Graphics](https://img.shields.io/badge/Subject-Computer%20Graphics-purple.svg)](#)
 
-An interactive, endless 2D arcade game engine built with **Python** and **Pygame** as a **Computer Graphics (CG)** course project. Players navigate an animated bird/plane through procedural pipe obstacles with pixel-perfect mask collisions, parallax background scrolling, score tracking, and restart mechanics.
+An interactive, endless 2D arcade game engine built with **Python** and **Pygame** as a 3-month **Computer Graphics (CG)** course project (April 2025 – July 2025). Players navigate an animated bird/plane through procedural pipe obstacles with pixel-perfect mask collisions, parallax background scrolling, score tracking, and restart mechanics.
 
 ---
 
 ## 👥 Team & Project Acknowledgment
 
-Built as a 4-member semester project for **Computer Graphics**:
+Built as a 4-member 3-month semester project for **Computer Graphics**:
 * **Tisha Manandhar**
 * **Tiya Shrestha**
 * **Yogesh Pandey**
-* **Lead Contributor**
+* **Suyesh Shrestha**
 
 ---
 
@@ -32,7 +32,7 @@ Built as a 4-member semester project for **Computer Graphics**:
 
 | Control | Input | Action |
 |---|---|---|
-| **Jump / Flap** | `SPACE` or `Mouse Left Click` | Fly Upward |
+| **Jump / Flap** | `SPACE` / `UP Arrow` / `Mouse Left Click` | Fly Upward |
 | **Restart Game** | `SPACE` (on Game Over) | Reset game state & score |
 | **Quit Game** | Close Window | Exit Game |
 
